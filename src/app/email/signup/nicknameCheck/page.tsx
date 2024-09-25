@@ -68,9 +68,9 @@ const NicknameCheckPage: React.FC = () => {
             <CancelIcon />
           </div>
           <p style={styles.welcomeText}>이제 회원가입이<br />다 끝나가요!</p>
-          <div style={styles.inputboxContainer}>
+          <div style={{ width: '100%', height: '44px', position: 'relative', background: '#efefef', borderRadius: '4px', border: 'none', fontSize: '14px',}}>
             <p>닉네임</p>
-            <div style={styles.textInputBox}>
+            <div style={{ width: '100%', height: '44px', position: 'relative', background: '#efefef', borderRadius: '4px', border: 'none', fontSize: '14px',}}>
               <input
                 style={styles.textInput}
                 type="text"
