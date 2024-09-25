@@ -4,7 +4,7 @@ import React from 'react';
 import Head from 'next/head';
 import { useRouter } from "next/navigation";
 import Image from 'next/image'; // next/image 사용
-import checkImage from '@/components/login/images/checkIcon.svg';
+import CheckImage from '@/components/login/images/checkIcon.svg';
 
 const Complete: React.FC = () => {
 
@@ -26,15 +26,8 @@ const Complete: React.FC = () => {
           <p style={styles.welcomeText}>비밀번호 재설정이 <br />완료됐어요 😉</p>
           
           <div style={styles.imageWrapper}>
-            <Image
-              src={checkImage}
-              alt="Check Icon"
-              width={150}
-              height={150}
-              style={styles.image}
-            />
+            <CheckImage />
           </div>
-
           <button onClick={nextPage} style={styles.nextButton}>로그인 화면으로 돌아가기</button>
         </div>
       </div>

@@ -69,9 +69,9 @@ const PasswordCheckPage: React.FC = () => {
             <CancelIcon />
           </div>
           <p style={styles.welcomeText}>로그인에 사용할<br />비밀번호를 작성해주세요</p>
-          <div style={styles.inputboxContainer}>
+          <div>
             <p>비밀번호</p>
-            <div style={styles.textInputBox}>
+            <div style={{ width: '100%', height: '44px', position: 'relative', background: '#efefef', borderRadius: '4px', border: 'none', fontSize: '14px',}}>
               <input
                 style={styles.textInput}
                 type={isPasswordVisible ? 'text' : 'password'}
@@ -80,12 +80,12 @@ const PasswordCheckPage: React.FC = () => {
                 onChange={handlePasswordChange}
               />
               {isPasswordVisible ? (
-                <VisibleIcon style={styles.blindButton} onClick={togglePasswordVisibility} />
+                <VisibleIcon style={{ position: 'absolute', right: '12px', top: '12px', cursor: 'pointer'}} onClick={togglePasswordVisibility} />
               ) : (
-                <BlindIcon style={styles.blindButton} onClick={togglePasswordVisibility} />
+                <BlindIcon style={{ position: 'absolute', right: '12px', top: '12px', cursor: 'pointer'}} onClick={togglePasswordVisibility} />
               )}
             </div>
-            <div style={styles.checkTextContainer}>
+            <div style={{ fontFamily: 'Pretendard, sans-serif', marginBottom: '245px', display: 'flex', flexDirection: 'column', gap: '2px',}}>
               <div style={styles.checkText}>
                 <CheckIcon style={{ color: getCheckIconColor(hasLetter) }} />
                 <p style={{ color: getCheckIconColor(hasLetter) }}>영문과 숫자 포함</p>
