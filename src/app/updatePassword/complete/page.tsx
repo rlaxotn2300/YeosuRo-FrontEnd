@@ -9,7 +9,7 @@ import checkImage from '@/components/login/images/checkIcon.svg';
 const Complete: React.FC = () => {
 
   const router = useRouter();
-  const nextPage = () => {
+  const nextPage = () => { 
     router.push(`/login/email`);
   }
 
