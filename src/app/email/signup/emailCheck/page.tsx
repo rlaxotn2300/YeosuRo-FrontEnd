@@ -21,7 +21,7 @@ const EmailCheck: React.FC = () => {
   const setUserState = useSetRecoilState(signUpState);
 
   useEffect(() => {
-    let interval: NodeJS.Timer;
+    let interval: ReturnType<typeof setInterval>;  // 변경된 부분
     if (isTimerActive) {
       interval = setInterval(() => {
         setTimer((prev) => {
