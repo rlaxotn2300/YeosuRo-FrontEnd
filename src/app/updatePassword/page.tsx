@@ -22,7 +22,7 @@ const EmailCheck: React.FC = () => {
     const setUserState = useSetRecoilState(updatePasswordState);
   
     useEffect(() => {
-      let interval: NodeJS.Timer;
+      let interval: ReturnType<typeof setInterval>;
       if (isTimerActive) {
         interval = setInterval(() => {
           setTimer((prev) => {
