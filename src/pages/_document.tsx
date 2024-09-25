@@ -5,8 +5,8 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <title>여수로</title>
-        <meta property="og:title" content="My page title" key="title" />
+        {/* <title>YeosuRo</title> */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />
